@@ -1,0 +1,26 @@
+# DevStack credentials
+DEVSTACK_USERNAME="your_username"
+DEVSTACK_PASSWORD="your_password"
+DEVSTACK_PROJECT="your_project"
+DEVSTACK_DOMAIN="your_domain"
+DEVSTACK_AUTH_ENDPOINT="https://your_endpoint/identity/v3"
+
+# VM migration details
+VM_NAME="vm_to_migrate"
+DEVSTACK_NETWORK="devstack_network"
+HARVESTER_NETWORK="harvester_network" #example namespace/vm-network -> default/vlanX
+
+# SSL Certificate in PEM format (multi-line)
+DEVSTACK_SSL_CERT="
+-----BEGIN CERTIFICATE-----
+MIIDzjCCAragAwIBAgIUEwlStVUK6+fdGCZH/7aR4dbCMuswDQYJKoZIhvcNAQEL
+sFtrvEAWb6QD0ZJx/aFDx7yh8Ur9cvkuOINxKm2MOLOMuVoy5waJYf+EI2BXVp6L
+...
+...
+...
+RAeb97VbbEJN0NUTFGVLSbG9
+-----END CERTIFICATE-----
+" #connect via SSH to the DevStack node, become root and read the contents of the file /etc/ssl/certs/devstack/selfsigned.crt
+
+# Path to Harvester kubeconfig
+HARVESTER_KUBECONFIG_PATH="/path/to/your/harvester/kubeconfig"

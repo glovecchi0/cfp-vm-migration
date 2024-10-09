@@ -1,0 +1,28 @@
+# Terraform directories and files
+**/.terraform/*
+**/terraform-provider*/*
+*.tfstate
+*.tfstate.*
+*.terraform*
+crash.log
+
+# Files that may contain secrets
+terraform.tfvars
+*kube_config.yml*
+*-ssh_private_key.pem*
+*-ssh_public_key.pem*
+*config-yaml*
+devstack-credentials.yml
+devstack-source.yml
+vm-migration.yml
+variables
+
+# Temporary files
+**/*.swp
+.DS_Store
+
+# Allow
+!devstack-credentials.yml.tpl
+!devstack-source.yml.tpl
+!vm-migration.yml.tpl
+!variables.examples
