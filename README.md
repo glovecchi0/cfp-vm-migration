@@ -65,7 +65,7 @@ K+aI1+lPEMrNqdy8s0+gztBBkrEgY27CN0RxnS+e1zZNIGdqBlOSPoFkK9KMhNOe
 c/0KpF1yHwZ65QJ8ke6LDCBsaDSGzwoRmz/MNHS1G6jHoZ02ILY6+SNVZvGK0HSo
 rGvtSyuUCwlOFYiWUhw8HA==
 -----END CERTIFICATE-----
-" #connect via SSH to the DevStack node, become root and read the contents of the file /etc/ssl/certs/devstack/selfsigned.cr
+" #connect via SSH to the DevStack node, become root and read the contents of the file /etc/ssl/certs/devstack/selfsigned.crt
 
 # Path to Harvester kubeconfig
 HARVESTER_KUBECONFIG_PATH="/Users/username/suse/harvester-equinix-tf/examples/custom-vm-network/username_kube_config.yml"
