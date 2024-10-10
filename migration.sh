@@ -94,6 +94,7 @@ while true; do
     # Check if the addon is enabled
     if [[ $addon_status == *"true"* ]]; then
         echo "vm-import-controller is enabled."
+        sleep 5
         break
     else
         echo "vm-import-controller is not enabled yet. Retrying in 5 seconds..."
@@ -113,6 +114,7 @@ while true; do
     # Check if the status contains 'clusterReady'
     if [[ $source_status == *"clusterReady"* ]]; then
         echo "OpenStack source 'devstack' is clusterReady."
+        sleep 5
         break
     else
         echo "OpenStack source 'devstack' is not ready yet. Current status:\n$source_status"
