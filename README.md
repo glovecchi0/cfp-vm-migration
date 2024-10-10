@@ -78,7 +78,7 @@ Once the `variables` file is correctly configured, you can execute the migration
 Run the script:
 
 ```bash
-$ sh migration-script.sh
+$ sh migration.sh
 ```
 
 ### 4. Monitor the Migration
